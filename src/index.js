@@ -1,16 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Router from './Router';
+import Navbar from './Components/Navbar';
+import Footer from './Components/Footer'
 
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
-    {/* <NavbarHeader /> */}
+      <Navbar />
+      <Footer />
       <Router />
     </BrowserRouter>
   </React.StrictMode>,
